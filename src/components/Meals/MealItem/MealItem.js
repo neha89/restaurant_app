@@ -11,7 +11,8 @@ return <li className={classes.meal}>
         <div className={classes.price}>{price}</div>
         </div>
         <div>
-            <MealItemForm />
+            {console.log(props)}
+            <MealItemForm id={props.id} item={props}/>
         </div>
 </li>
 };
